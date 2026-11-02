@@ -1,12 +1,18 @@
 <!doctype html>
+<!-- Definiert das Grundgerüst der HTML-Seite für SvelteKit. -->
 <html lang="en">
 	<head>
+		<!-- Legt das Zeichensatz-Handling fest. -->
 		<meta charset="utf-8" />
+		<!-- Macht die Seite auf mobilen Geräten responsive. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Verbessert die Skalierung von Text auf kleinen Bildschirmen. -->
 		<meta name="text-scale" content="scale" />
+		<!-- SvelteKit fügt hier die Page-spezifischen Head-Tags ein. -->
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<!-- Das Body-Element wird von SvelteKit hier als Platzhalter für die gerenderte App eingesetzt. -->
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

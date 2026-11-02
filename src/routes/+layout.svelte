@@ -1,12 +1,11 @@
-<script>
-	import './layout.css';
-	import favicon from '#lib/assets/favicon.svg';
 
-	let { children } = $props();
+<script>
+    // Importiert das globale CSS für das Layout der Seiten.
+    import './layout.css';
+
+    // Nimmt den Seiteninhalt als `children` entgegen.
+    let { children } = $props();
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
-
+<!-- Rendert den Inhalt der aktuellen Route innerhalb dieses Layouts. -->
 {@render children()}

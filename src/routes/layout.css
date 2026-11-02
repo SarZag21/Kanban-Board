@@ -1,3 +1,6 @@
+/* Importiert Tailwind CSS als Basis-Styling für das gesamte Projekt. */
 @import 'tailwindcss';
+/* Aktiviert zusätzliche Form-Styles, damit Inputs und Selects einheitlich aussehen. */
 @plugin '@tailwindcss/forms';
+/* Aktiviert typografische Verbesserungen wie bessere Überschriften und Lesbarkeit. */
 @plugin '@tailwindcss/typography';

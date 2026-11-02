@@ -1,1 +1,3 @@
-// place files you want to import through the `#lib` alias in this folder.
+// Diese Datei dient als zentraler Exportpunkt für alle Dateien im `#lib`-Alias.
+// Wenn du Komponenten oder Hilfsfunktionen aus diesem Ordner importieren willst,
+// werden sie hier gesammelt und über den Alias verfügbar gemacht.
