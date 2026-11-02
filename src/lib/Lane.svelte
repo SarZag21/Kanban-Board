@@ -1,9 +1,14 @@
 <script>
+    import IssueCard from './IssueCard.svelte';
+
     let { title } = $props();
 </script>
 
 <div class="lane">
     <h2>{title}</h2>
+    {#if title === 'Do'}
+    <IssueCard title="Login erstellen" />
+{/if}
 </div>
 
 <style>
