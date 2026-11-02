@@ -1,22 +1,24 @@
 <script>
     import IssueCard from './IssueCard.svelte';
 
-    let { title } = $props();
+    let { title, issues = [] } = $props();
 </script>
 
 <div class="lane">
     <h2>{title}</h2>
 
-    {#if title === 'Do'}
-        <IssueCard
-            title="Login erstellen"
-            description="Login-Seite programmieren"
-            storyPoints={5}
-            priority="High"
-            creationDate="2026-11-02"
-           dueDate="2026-10-20"
-        />
-    {/if}
+  
+{#each issues as issue (issue.id)}
+    <IssueCard
+        title={issue.title}
+        description={issue.description}
+        storyPoints={issue.storyPoints}
+        priority={issue.priority}
+        creationDate={issue.creationDate}
+        dueDate={issue.dueDate}
+    />
+{/each}
+
 </div>
 
 <style>
