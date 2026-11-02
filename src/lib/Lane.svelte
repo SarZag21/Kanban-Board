@@ -14,7 +14,7 @@
             storyPoints={5}
             priority="High"
             creationDate="2026-11-02"
-            dueDate="2026-11-10"
+           dueDate="2026-10-20"
         />
     {/if}
 </div>
